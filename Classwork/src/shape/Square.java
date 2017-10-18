@@ -1,19 +1,20 @@
 package shape;
 
-public class Square implements Shape {
+import shape.Rectangle;
 
-	public Square(double length) {
-		this.length = length;
-	}
-	private double length;
-	@Override
-	public double perimeter() {
-		return length * 4;
+public class Square extends Rectangle {
+
+	int side;
+
+	public Square(int side) {
+		super(side, side);
+		this.side = side;
 	}
 
 	@Override
-	public double area() {
-		return length * length;
+	public String toString() {
+		return "Square side: " + side + " Area: " + this.area() + " Perimeter: "
+				+ this.perimeter();
 	}
 
 }

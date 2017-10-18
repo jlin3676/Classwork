@@ -18,6 +18,10 @@ public class Rectangle implements Shape {
 	public double area() {
 		return length * width;
 	}
-
+	
+	public String toString() {
+		return "Rectangle Width: " + width + " Length: " + length + " Area: " + this.area() + " Perimeter: "
+				+ this.perimeter();
+	}
 	
 }

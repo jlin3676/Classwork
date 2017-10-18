@@ -2,7 +2,7 @@ package shape;
 import java.util.Random;
 public class ShapeUtilities {
 
-	public static Shape getRandom() {
+	public static Shape randomShape() {
 		Random r = new Random();
 		int x = r.nextInt(3);
 		switch(x) {
@@ -15,7 +15,7 @@ public class ShapeUtilities {
 		}
 	}
 	
-	public static double sumPeri(Shape[]shapeArr) {
+	public static double sumPerimeter(Shape[]shapeArr) {
 		double total = 0;
 		for(int count = 0; count < shapeArr.length; count++) {
 			total += shapeArr[count].perimeter();

@@ -1,6 +1,6 @@
 package shape;
 
-public class Triangle {
+public class Triangle implements Shape {
 
 	private double side;
 	private double side2;
@@ -12,7 +12,7 @@ public class Triangle {
 	}
 	
 	public double area() {
-		double p = (side + side2 + side3)/2;
+		double p = ((side + side2 + side3)/2);
 		double a = Math.sqrt(p * (p-side) * (p-side2) * (p-side3));
 		return a;
 	}

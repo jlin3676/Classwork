@@ -21,7 +21,7 @@ public class Triangle implements Shape {
 		return side + side2 + side3;
 	}
 	
-	public String stringTo() {
-		return "Triangle Sides: " + side + ", " + side2 + ", " + side3 + "Area: " + this.area() + "Perimeter: " + this.perimeter();
+	public String toString() {
+		return "Triangle Sides: " + side + ", " + side2 + ", " + side3 + " Area: " + this.area() + " Perimeter: " + this.perimeter();
 	}
 }
